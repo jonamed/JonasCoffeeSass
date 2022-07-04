@@ -1,0 +1,98 @@
+.body{
+    background-image: linear-gradient(to bottom, black, rgb(122, 122, 122));
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.tituloIndex, .tituloVariedades, .tituloNosotros, .textoVariedades, .tituloCafeteras{
+    color: white;
+    margin-left: 10px;
+}
+
+.variedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "mexico colombia"
+        "brasil ethiopia";
+    background-color: #649389;
+    color: white;
+    margin-top: 20px;
+}
+
+.mexico {
+    grid-area: mexico;
+    
+}
+.variedades img:hover{
+    transform: rotateZ(-.5deg);
+}
+.cafeteras img:hover{
+    transform: scale(1.05) ;
+}
+
+.colombia {
+    grid-area: colombia;
+}
+
+.brasil {
+    grid-area: brasil;
+}
+
+.ethiopia {
+    grid-area: ethiopia;
+}
+.variedades div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.variedades img {
+    max-width: 40vw;
+}
+
+.cafeteras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+.cafeteras img {
+    position: relative;
+    float: left;
+}.cafeteras p {
+    margin-top: 10px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .variedades {
+        background-color: #649389;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mexico"
+            "brasil"
+            "colombia"
+            "ethiopia";
+        justify-items: center;
+        padding: 10px;
+
+    }
+    .variedades img {
+        max-width: 90vw;
+    }
+    
+    .cafeteras {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        background-color: #649389;
+        color: white;
+        margin: 10px;
+        padding: 10px;
+    }
+
+}

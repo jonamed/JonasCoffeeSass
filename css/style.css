@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&family=Source+Sans+Pro:wght@200;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&family=Gentium+Book+Plus:wght@400;700&family=Source+Sans+Pro:wght@200;400;700&display=swap");
+.main {
+  color: white;
+  font-family: 'Arima'; }
+
+.body {
+  background-image: linear-gradient(to bottom, black, #7a7a7a); }
+
+.header {
+  font-family: "Arima", cursive; }
+
+.main {
+  font-family: "Gentium Book Plus", serif; }
+
+.main__h2 {
+  color: white;
+  font-weight: bolder;
+  margin-left: 1rem; }
+
+.main__section {
+  color: white;
+  margin-left: 2rem; }
+
+.cafeteras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-template-areas: "filtro espresso" "prensa capsulas"; }
+  .cafeteras__h3 {
+    margin-left: 1rem; }
+  .cafeteras img {
+    margin-left: 2rem; }
+  .cafeteras p {
+    font-family: "Gentium Book Plus", serif;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: justify; }
+
+.capsulas {
+  grid-area: capsulas; }
+
+.prensa {
+  grid-area: prensa; }
+
+.espresso {
+  grid-area: espresso; }
+
+.filtro {
+  grid-area: filtro; }
+
+.procesos {
+  font-family: "Arima", cursive;
+  font-size: larger; }
+  .procesos h3 {
+    margin: 1rem; }
+
+.card-text {
+  font-family: "Gentium Book Plus", serif;
+  color: black; }
+
+.main__h3 {
+  margin-left: 3rem; }
+
+.variedades p {
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .variedades {
+    background-color: #649389;
+    grid-template-columns: 1fr;
+    grid-template-areas: "mexico" "brasil" "colombia" "ethiopia";
+    justify-items: center;
+    padding: 10px; }
+  .variedades img {
+    max-width: 90vw; } }

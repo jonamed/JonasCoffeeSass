@@ -1,0 +1,28 @@
+@import './secciones/extend';
+
+@import './secciones/tipografias';
+@import './secciones/body';
+@import './secciones/nosotros';
+@import './secciones/cafeteras';
+@import './secciones/procesos';
+@import './secciones/variedades';
+
+
+@media (max-width: 768px) {
+    .variedades {
+        background-color: #649389;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mexico"
+            "brasil"
+            "colombia"
+            "ethiopia";
+        justify-items: center;
+        padding: 10px;
+
+    }
+
+    .variedades img {
+        max-width: 90vw;
+    }
+}
