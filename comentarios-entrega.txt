@@ -1,0 +1,8 @@
+Tercera entrega del proyecto final:
+
+Carpeta node_modules con .gitignore
+
+En el main.scss están las importaciones de todas las secciones, del extend y del @mediaquery
+
+Prácticas de BEM utilizadas en algunos nombres de clases, por ejemplo: main, main__h2, main__section
+
