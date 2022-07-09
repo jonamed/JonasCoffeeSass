@@ -67,20 +67,24 @@
 .variedades p {
   text-align: center; }
 
+.variedades img {
+  max-width: 100%;
+  margin-bottom: 3rem; }
+
 @media (max-width: 768px) {
   .variedades {
     grid-template-columns: 1fr;
     grid-template-areas: "mexico" "brasil" "colombia" "ethiopia";
     justify-items: center;
     padding: 10px; }
+    .variedades .variedades img {
+      max-width: 90vw;
+      justify-items: center; }
   .cafeteras {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "filtro"  "espresso" "prensa"  "capsulas";
+    grid-template-areas: "filtro" "espresso" "prensa" "capsulas";
     justify-items: center; }
   .cafeteras img {
     justify-items: center;
-    max-width: 90vw; }
-  .variedades img {
-    max-width: 90vw;
-    justify-items: center; } }
+    max-width: 90vw; } }

@@ -9,7 +9,7 @@
 
 
 @media (max-width: 768px) {
-    .variedades {        
+    .variedades {
         grid-template-columns: 1fr;
         grid-template-areas:
             "mexico"
@@ -19,24 +19,27 @@
         justify-items: center;
         padding: 10px;
 
+        .variedades img {
+            max-width: 90vw;
+            justify-items: center;
+        }
     }
+
     .cafeteras {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
-        "filtro" 
-        "espresso"
-        "prensa" 
-        "capsulas";        
-        justify-items: center;       
-    }
-    .cafeteras img{
+            "filtro"
+            "espresso"
+            "prensa"
+            "capsulas";
         justify-items: center;
-        max-width: 90vw;
     }
 
-    .variedades img {
-        max-width: 90vw;
+    .cafeteras img {
         justify-items: center;
+        max-width: 90vw;
     }
+    
+    
 }

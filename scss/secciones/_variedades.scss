@@ -1,5 +1,6 @@
 .main{
     @extend %estilosParrafo;
+
     &__h3{
         margin-left: 3rem;        
     }
@@ -7,3 +8,8 @@
 .variedades p{
     text-align: center;
 }
+.variedades img{
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
