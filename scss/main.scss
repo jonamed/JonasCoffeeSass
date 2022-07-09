@@ -9,8 +9,7 @@
 
 
 @media (max-width: 768px) {
-    .variedades {
-        background-color: #649389;
+    .variedades {        
         grid-template-columns: 1fr;
         grid-template-areas:
             "mexico"
@@ -21,8 +20,23 @@
         padding: 10px;
 
     }
+    .cafeteras {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "filtro" 
+        "espresso"
+        "prensa" 
+        "capsulas";        
+        justify-items: center;       
+    }
+    .cafeteras img{
+        justify-items: center;
+        max-width: 90vw;
+    }
 
     .variedades img {
         max-width: 90vw;
+        justify-items: center;
     }
 }

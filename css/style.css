@@ -13,14 +13,15 @@
 .main {
   font-family: "Gentium Book Plus", serif; }
 
-.main__h2 {
-  color: white;
-  font-weight: bolder;
-  margin-left: 1rem; }
-
-.main__section {
-  color: white;
-  margin-left: 2rem; }
+.main {
+  min-height: 90vh; }
+  .main__h2 {
+    color: white;
+    font-weight: bolder;
+    margin-left: 1rem; }
+  .main__section {
+    color: white;
+    margin-left: 2rem; }
 
 .cafeteras {
   display: grid;
@@ -31,7 +32,7 @@
   .cafeteras__h3 {
     margin-left: 1rem; }
   .cafeteras img {
-    margin-left: 2rem; }
+    margin-left: 14rem; }
   .cafeteras p {
     font-family: "Gentium Book Plus", serif;
     margin-left: 2rem;
@@ -68,10 +69,18 @@
 
 @media (max-width: 768px) {
   .variedades {
-    background-color: #649389;
     grid-template-columns: 1fr;
     grid-template-areas: "mexico" "brasil" "colombia" "ethiopia";
     justify-items: center;
     padding: 10px; }
+  .cafeteras {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "filtro"  "espresso" "prensa"  "capsulas";
+    justify-items: center; }
+  .cafeteras img {
+    justify-items: center;
+    max-width: 90vw; }
   .variedades img {
-    max-width: 90vw; } }
+    max-width: 90vw;
+    justify-items: center; } }

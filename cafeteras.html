@@ -52,13 +52,91 @@
         <!-- Fin barra de navegación -->
     </header>
     <main class="main">
-        <h2 class="tituloCafeteras">Tipos de cafeteras</h2>
-        <article class="cafeteras">
+        <h2 class="tituloCafeteras text-center mt-3">Tipos de cafeteras</h2>
+        <div class="accordion " id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        FILTRO
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./img/filtro.jpg" alt="">
+                        <strong>Cafetera de filtro</strong><br>También conocida como "de goteo". <br>Consiste en un depósito de agua que se calienta y se hace pasar
+                        a
+                        través del café molido colocado sobre un filtro de papel o malla de aluminio o acero. <br>El
+                        agua
+                        pasa lentamente a través del café medianamente molido, y cae gota a gota por gravedad hasta una
+                        jarra de cristal. <br>Generalmente se mantiene caliente gracias a una base o placa eléctrica.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ESPRESSO
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./img/espresso.jpg" alt="">
+                        <strong>Cafetera espresso</strong><br>Puede encontrarse como "exprés". <br>Hace pasar agua caliente (90° generalmente) a una presión de
+                        entre 8 y 15 atmósferas durante 20 o 30 segundos por café molido muy fino, extrayendo su sabor y
+                        esencia. <br>La presión es clave en este tipo de máquinas y determina la cremosidad del café.<br>La
+                        preparación es rápida, en menos de dos minutos puede obtenerse una bebida. Es muy común en
+                        restaurantes y cafeterías.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        PRENSA FRANCESA
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./img/prensafrancesa.jpg" alt="">
+                        <strong>Prensa francesa</strong><br>Pese a ser una invención italiana, fueron los franceses quienes la popularizaron, de ahí su nombre.
+                        <br>El café requiere ser molido en grano grande para que no traspase el filtro. <br>La preparación
+                        es relativamente rápida y sencilla, sólo se vierte agua caliente, se esperan unos cinco minutos y se
+                        comprime lentamente la prensa o pistón. <br>Puede utilizarse también para preparar té u otras
+                        infusiones.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        CAPSULAS
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <img src="./img/capsulas.jpg" alt="">
+                        <strong>Cafetera de cápsulas</strong><br>tiliza pequeñas cápsulas que contienen unos 7 gramos de café en polvo, cantidad suficiente para una
+                        taza. <br>Algunas están fabricadas en aluminio, son herméticas y pueden encontrarse diferentes
+                        variedades o sabores para preparar. <br>También es un método rápido, ya que en menos de dos minutos
+                        se logra servir una taza.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <article class="cafeteras">
             <section class="filtro">
-                <h3 class="cafeteras__h3">Filtro:</h3>
+                <h3 class="cafeteras__h3 text-center">Filtro:</h3>
                 <div>
                     <img src="./img/filtro.jpg" alt="">
-                    <p>También conocida como "de goteo", consiste en un depósito de agua que se calienta y se hace pasar
+                    <p class="text-center">También conocida como "de goteo", consiste en un depósito de agua que se calienta y se hace pasar
                         a
                         través del café molido colocado sobre un filtro de papel o malla de aluminio o acero. <br>El
                         agua
@@ -68,18 +146,18 @@
                 </div>
             </section>
             <section class="espresso">
-                <h3 class="cafeteras__h3">Espresso:</h3>
+                <h3 class="cafeteras__h3 text-center">Espresso:</h3>
                 <img src="./img/espresso.jpg" alt="">
-                <p>Puede encontrarse como "exprés". <br>Hace pasar agua caliente (90° generalmente) a una presión de
+                <p class="text-center">Puede encontrarse como "exprés". <br>Hace pasar agua caliente (90° generalmente) a una presión de
                     entre 8 y 15 atmósferas durante 20 o 30 segundos por café molido muy fino, extrayendo su sabor y
                     esencia. <br>La presión es clave en este tipo de máquinas y determina la cremosidad del café.<br>La
                     preparación es rápida, en menos de dos minutos puede obtenerse una bebida. Es muy común en
                     restaurantes y cafeterías.</p>
             </section>
             <section class="prensa">
-                <h3 class="cafeteras__h3">Prensa francesa:</h3>
+                <h3 class="cafeteras__h3 text-center">Prensa francesa:</h3>
                 <img src="./img/prensafrancesa.jpg" alt="">
-                <p>Pese a ser una invención italiana, fueron los franceses quienes la popularizaron, de ahí su nombre.
+                <p class="text-center">Pese a ser una invención italiana, fueron los franceses quienes la popularizaron, de ahí su nombre.
                  <br>El café requiere ser molido en grano grande para que no traspase el filtro. <br>La preparación
                  es relativamente rápida y sencilla, sólo se vierte agua caliente, se esperan unos cinco minutos y se
                  comprime lentamente la prensa o pistón. <br>Puede utilizarse también para preparar té u otras
@@ -87,14 +165,14 @@
                 </p>
             </section>
             <section class="capsulas">
-                <h3 class="cafeteras__h3">Cafetera de cápsulas:</h3>
+                <h3 class="cafeteras__h3 text-center">Cafetera de cápsulas:</h3>
                 <img src="./img/capsulas.jpg" alt="">
-                <p>Utiliza pequeñas cápsulas que contienen unos 7 gramos de café en polvo, cantidad suficiente para una
+                <p class="text-center">Utiliza pequeñas cápsulas que contienen unos 7 gramos de café en polvo, cantidad suficiente para una
                     taza. <br>Algunas están fabricadas en aluminio, son herméticas y pueden encontrarse diferentes
                     variedades o sabores para preparar. <br>También es un método rápido, ya que en menos de dos minutos
                     se logra servir una taza.</p>
             </section>
-        </article>
+        </article> -->
     </main>
 </body>
 <footer class="bg-light mt-3">
